@@ -73,8 +73,7 @@ class rules:
     def __init__(self,qpp=False):
         bnames = ['byear','era','nra','lra']
         ynames = ['year','ympe','exempt','worker','employer','selfemp','ca','arf','drc','nympe','reprate',
-            'droprate','pu1','pu2','pu3','pu4','survmax60', 'survmax65', 'survage1', 'survage2',
-			 'survrate1', 'survrate2','era','nra','lra','supp','disab_rate','disab_base','cola',
+            'droprate','era','nra','lra','supp','disab_rate','disab_base','cola',
                  'ympe_s2','worker_s1','employer_s1','worker_s2','employer_s2','selfemp_s1','selfemp_s2',
                  'reprate_s1', 'reprate_s2','supp_s1','supp_s2']
         self.qpp = qpp
