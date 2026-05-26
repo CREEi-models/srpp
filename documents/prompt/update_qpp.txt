@@ -1,0 +1,90 @@
+Role:
+You are an experienced Python developer and research assistant. Your task is to update an existing Excel parameter file while preserving its structure, formatting, and data integrity.
+
+Context:
+The file "srpp/params/qpp_history.xlsx" contains historical parameters for the Québec Pension Plan.
+
+The file "documents/ynames_descriptions.csv" contains the list of variable names used in "qpp_history.xlsx", their descriptions, and possibly source information. Use this file to understand each variable and to identify the appropriate source for each parameter.
+
+The goal is to add the year 2026 to "qpp_history.xlsx".
+
+Task:
+Add 2026 values to "srpp/params/qpp_history.xlsx" using the variables documented in "documents/ynames_descriptions.csv".
+
+Steps:
+1. Inspect the structure of "srpp/params/qpp_history.xlsx".
+   - Identify where years are stored.
+   - Identify whether years are represented as rows, columns, or in another structure.
+   - Identify the existing last year in the file.
+   - Identify all variables that require a 2026 value.
+
+2. Inspect "documents/ynames_descriptions.csv".
+   - Use the variable names and descriptions to understand each parameter.
+   - Use the "qpp_source" column, if it exists, to identify reliable sources for 2026 values.
+   - If no "qpp_source" column exists, use the descriptions to determine what source is needed.
+
+3. Find reliable sources for the 2026 values.
+   - Prefer official sources such as Government of Québec, Revenu Québec, Statistics Canada, or official QPP documentation.
+   - Do not use unofficial sources unless no official source exists.
+   - Do not invent values.
+
+4. Add the year 2026 to "qpp_history.xlsx".
+   - Preserve the workbook structure.
+   - Preserve formulas, formatting, sheet names, column names, and existing values.
+   - Do not modify historical values for previous years.
+   - If 2026 already exists, do not create a duplicate year. Instead, check whether the existing 2026 values need to be updated.
+
+5. For each 2026 value:
+   - Match the parameter to the appropriate variable name.
+   - Use the description in "documents/ynames_descriptions.csv" to confirm the meaning of the variable.
+   - Use the most reliable available source.
+   - Be careful with units, rounding, percentages versus proportions, annual versus monthly values, and nominal versus indexed values.
+
+6. If a 2026 value cannot be verified:
+   - Leave the cell blank, or preserve the existing value if 2026 already exists.
+   - Do not guess.
+   - Record the missing value in the validation report.
+
+7. Create a validation report named "qpp_history_2026_validation.csv" with the following columns:
+   - variable_name
+   - description
+   - year
+   - proposed_2026_value
+   - source
+   - source_url
+   - match_status
+   - notes
+
+   The "match_status" column should use one of:
+   - "added"
+   - "updated"
+   - "already_present"
+   - "not_found"
+   - "uncertain"
+
+8. Save the updated Excel file as:
+   "srpp/params/qpp_history_2026_updated.xlsx"
+
+Constraints:
+- Do not invent values.
+- Do not modify values for years before 2026.
+- Do not remove or rename sheets, rows, columns, or variables.
+- Do not change the structure of "documents/ynames_descriptions.csv".
+- Use "documents/ynames_descriptions.csv" to map variable names to their descriptions.
+- If a source value conflicts with the existing file logic, flag it in the validation report instead of silently changing it.
+- If the code requires 2026 to appear in a specific order, preserve the chronological order used in the workbook.
+- Before saving, verify that every variable requiring a 2026 value is included in the validation report.
+
+Outputs:
+1. Updated Excel file:
+   "srpp/params/qpp_history_2026_updated.xlsx"
+
+2. Validation report:
+   "qpp_history_2026_validation.csv"
+
+3. Short written summary including:
+   - whether 2026 was newly added or already present;
+   - number of 2026 values added;
+   - number of 2026 values updated;
+   - number of values that could not be verified;
+   - any assumptions or unresolved issues.
