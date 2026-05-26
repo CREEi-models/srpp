@@ -1,41 +1,31 @@
-"variable_name","description"
-"year","Parameter year"
-"ympe","Base YMPE amount for a given year"
-"exempt","Exemption amount on contributory earnings"
-"worker","Employee contribution rate for the base plan"
-"employer","Employer contribution rate for the base plan"
-"selfemp","Self-employment contribution rate for the base plan"
-"ca","QPP income adjustment factor for early pension reduction before age 65"
-"arf","Benefit reduction rate for starting benefits before age 65"
-"drc","Benefit increase rate for starting benefits after age 65"
-"nympe","Number of years used to calculate the average YMPE"
-"reprate","Replacement rate for the base plan"
-"droprate","Proportion of years excluded from the retirement pension calculation"
-"pu1","Monthly flat-rate component for the QPP Disability Pension; also served as the monthly flat-rate portion of the QPP Survivor's Pension for spouses aged 45 to 64 or spouses under 45 who were disabled"
-"pu2","Monthly flat-rate component for the QPP Disability Pension; also served as the monthly flat-rate portion of the QPP Survivor's Pension for spouses aged 45 to 64 or spouses under 45 who were disabled"
-"pu3","Monthly flat-rate component of the QPP Survivor's Pension for a surviving spouse under age 45 who was not disabled but had at least one dependent child"
-"pu4","Monthly flat-rate component of the QPP Survivor's Pension for a surviving spouse under age 45 who was not disabled and had no dependent children"
-"survmax60","Maximum annual retirement pension payable at age 60"
-"survmax65","Maximum annual retirement pension payable at age 65"
-"survage1","Age threshold under which a non-disabled surviving spouse with no dependent children faces a benefit reduction of 1% per month"
-"survage2","Age milestone used to determine the applicable survivor benefit formula and to calculate the deceased contributor's retirement pension value"
-"survrate1","Multiplication factor applied to the deceased contributor's retirement pension to calculate the variable portion of the under-65 survivor benefit"
-"survrate2","Statutory multiplier applied to the deceased contributor's calculated retirement pension to determine the maximum monthly benefit for a survivor aged 65 or older"
-"era","Minimum age to start receiving the retirement pension"
-"nra","Normal retirement age"
-"lra","Latest retirement age"
-"supp","Post-retirement benefit accrual rate for beneficiaries who keep working while receiving retirement benefits; base plan portion"
-"disab_rate","Disability benefit rate; not currently used"
-"disab_base","Disability benefit amount; not currently used"
-"cola","Annual benefit indexation rate after benefits have started"
-"ympe_s2","YMPE amount for the supplementary plan ceiling"
-"worker_s1","Employee contribution rate for the first tier of the supplementary plan"
-"employer_s1","Employer contribution rate for the first tier of the supplementary plan"
-"worker_s2","Employee contribution rate for the second tier of the supplementary plan"
-"employer_s2","Employer contribution rate for the second tier of the supplementary plan"
-"selfemp_s1","Self-employment contribution rate for the first tier of the supplementary plan"
-"selfemp_s2","Self-employment contribution rate for the second tier of the supplementary plan"
-"reprate_s1","Replacement rate for the first tier of the supplementary plan"
-"reprate_s2","Replacement rate for the second tier of the supplementary plan"
-"supp_s1","Post-retirement benefit accrual rate for beneficiaries who keep working while receiving retirement benefits; first tier of the supplementary plan"
-"supp_s2","Post-retirement benefit accrual rate for beneficiaries who keep working while receiving retirement benefits; second tier of the supplementary plan"
+variable_name;description;cpp_source;qpp_source
+year;Parameter year;;Retraite Qu?bec, Qu?bec Pension Plan Figures, basic information for 2026 - https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/regime_chiffres/Pages/regime_chiffres.aspx
+ympe;Base YMPE amount for a given year;https://www.canada.ca/en/employment-social-development/programs/pensions/reports/annual-2022.html;https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/regime_chiffres/Pages/regime_chiffres.aspx
+exempt;Exemption amount on contributory earnings;https://www.canada.ca/en/employment-social-development/programs/pensions/reports/annual-2022.html;https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/qpp-contributions/maximum-pensionable-earnings-and-contribution-rate/
+worker;Employee contribution rate for the base plan;https://www.osfi-bsif.gc.ca/en/oca/actuarial-reports/actuarial-report-32nd-canada-pension-plan;https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/Pages/regime-supplementaire.aspx
+employer;Employer contribution rate for the base plan;https://www.osfi-bsif.gc.ca/en/oca/actuarial-reports/actuarial-report-32nd-canada-pension-plan;https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/Pages/regime-supplementaire.aspx
+selfemp;Self-employment contribution rate for the base plan;https://www.osfi-bsif.gc.ca/en/oca/actuarial-reports/actuarial-report-32nd-canada-pension-plan;https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/Pages/regime-supplementaire.aspx
+ca;QPP income adjustment factor for early pension reduction before age 65;;L?gis Qu?bec, Act respecting the Qu?bec Pension Plan - https://www.legisquebec.gouv.qc.ca/fr/document/lc/r-9?langcont=en
+arf;Benefit reduction rate for starting benefits before age 65;https://www.canada.ca/en/employment-social-development/programs/pensions/reports/annual-2019.html;L?gis Qu?bec, Act respecting the Qu?bec Pension Plan - https://www.legisquebec.gouv.qc.ca/fr/document/lc/r-9?langcont=en
+drc;Benefit increase rate for starting benefits after age 65;https://www.canada.ca/en/employment-social-development/programs/pensions/reports/annual-2019.html;https://www.quebec.ca/en/employment/plan-manage-career/plan-retirement/quebec-pension-plan
+nympe;Number of years used to calculate the average YMPE;https://www.osfi-bsif.gc.ca/en/oca/actuarial-reports/actuarial-report-32nd-canada-pension-plan;https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/regime_chiffres/Pages/regime_chiffres_archives.aspx
+reprate;Replacement rate for the base plan;https://www.canada.ca/en/employment-social-development/programs/pensions/reports/annual-2024.html;L?gis Qu?bec, Act respecting the Qu?bec Pension Plan - https://www.legisquebec.gouv.qc.ca/fr/document/lc/r-9?langcont=en
+droprate;Proportion of years excluded from the retirement pension calculation;https://www.canada.ca/en/employment-social-development/programs/pensions/reports/annual-2024.html;https://www.rrq.gouv.qc.ca/en/retraite/rrq/calcul_rente/
+era;Minimum age to start receiving the retirement pension;https://www.canada.ca/en/employment-social-development/programs/pensions/reports/annual-2019.html;https://www.quebec.ca/en/employment/plan-manage-career/plan-retirement/quebec-pension-plan
+nra;Normal retirement age;https://www.canada.ca/en/employment-social-development/programs/pensions/reports/annual-2019.html;https://www.quebec.ca/en/employment/plan-manage-career/plan-retirement/quebec-pension-plan
+lra;Latest retirement age;https://www.canada.ca/en/employment-social-development/programs/pensions/reports/annual-2019.html;https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/regime_chiffres/Pages/regime_chiffres_archives.aspx
+supp;Post-retirement benefit accrual rate for beneficiaries who keep working while receiving retirement benefits;Justice Laws Website, Canada Pension Plan, section 59.1 - https://laws-lois.justice.gc.ca/eng/acts/C-8/section-59.1.html;L?gis Qu?bec, Act respecting the Qu?bec Pension Plan - https://www.legisquebec.gouv.qc.ca/fr/document/lc/r-9?langcont=en
+disab_rate;Disability benefit rate;;L?gis Qu?bec, Act respecting the Qu?bec Pension Plan - https://www.legisquebec.gouv.qc.ca/fr/document/lc/r-9?langcont=en
+disab_base;Disability benefit amount; https://www.canada.ca/en/employment-social-development/programs/pensions/reports/annual-2021.html;https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/regime_chiffres/Pages/regime_chiffres.aspx
+cola;Annual benefit indexation rate after benefits have started;https://www.canada.ca/en/services/benefits/publicpensions/cpp/receive-benefits/consumer-price-index.html;https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/regime_chiffres/Pages/regime_chiffres_archives.aspx
+ympe_s2;YMPE amount for the supplementary plan ceiling;https://www.canada.ca/en/employment-social-development/programs/pensions/reports/annual-2024.html;https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/qpp-contributions/maximum-pensionable-earnings-and-contribution-rate/
+worker_s1;Employee contribution rate for the first tier of the supplementary plan;https://www.osfi-bsif.gc.ca/en/oca/actuarial-reports/actuarial-report-32nd-canada-pension-plan;https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/Pages/regime-supplementaire.aspx
+employer_s1;Employer contribution rate for the first tier of the supplementary plan;https://www.osfi-bsif.gc.ca/en/oca/actuarial-reports/actuarial-report-32nd-canada-pension-plan;https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/Pages/regime-supplementaire.aspx
+worker_s2;Employee contribution rate for the second tier of the supplementary plan;https://www.canada.ca/en/employment-social-development/programs/pensions/reports/annual-2024.html;https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/Pages/regime-supplementaire.aspx
+employer_s2;Employer contribution rate for the second tier of the supplementary plan;https://www.canada.ca/en/employment-social-development/programs/pensions/reports/annual-2024.html;https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/Pages/regime-supplementaire.aspx
+selfemp_s1;Self-employment contribution rate for the first tier of the supplementary plan;https://www.osfi-bsif.gc.ca/en/oca/actuarial-reports/actuarial-report-32nd-canada-pension-plan;https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/Pages/regime-supplementaire.aspx
+selfemp_s2;Self-employment contribution rate for the second tier of the supplementary plan;https://www.canada.ca/en/employment-social-development/programs/pensions/reports/annual-2024.html;https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/Pages/regime-supplementaire.aspx
+reprate_s1;Replacement rate for the first tier of the supplementary plan;https://www.canada.ca/en/employment-social-development/programs/pensions/reports/annual-2024.html;L?gis Qu?bec, Act respecting the Qu?bec Pension Plan - https://www.legisquebec.gouv.qc.ca/fr/document/lc/r-9?langcont=en
+reprate_s2;Replacement rate for the second tier of the supplementary plan;https://www.canada.ca/en/employment-social-development/programs/pensions/reports/annual-2024.html;L?gis Qu?bec, Act respecting the Qu?bec Pension Plan - https://www.legisquebec.gouv.qc.ca/fr/document/lc/r-9?langcont=en
+supp_s1;Post-retirement benefit accrual rate for beneficiaries who keep working while receiving retirement benefits;Justice Laws Website, Canada Pension Plan, section 59.1 - https://laws-lois.justice.gc.ca/eng/acts/C-8/section-59.1.html;L?gis Qu?bec, Act respecting the Qu?bec Pension Plan - https://www.legisquebec.gouv.qc.ca/fr/document/lc/r-9?langcont=en
+supp_s2;Post-retirement benefit accrual rate for beneficiaries who keep working while receiving retirement benefits;Justice Laws Website, Canada Pension Plan, section 59.1 - https://laws-lois.justice.gc.ca/eng/acts/C-8/section-59.1.html;L?gis Qu?bec, Act respecting the Qu?bec Pension Plan - https://www.legisquebec.gouv.qc.ca/fr/document/lc/r-9?langcont=en
