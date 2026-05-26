@@ -1157,7 +1157,7 @@ class account:
                 prb_s1 = upe/self.rules.ympe(year) * self.rules.ympe(year+1)*self.rules.worktax_s1(year)*100*self.rules.supp_s1(year)
                 #PRB S2
                 if upe_s2>0:
-                    prb_s2 = upe_s2/(self.rules.ympe_s2(year)-self.rules.ympe(year))*(self.rules.ympe_s2(year+1)-self.rules.ympe(year+1)) * self.rules.supp_s1(year)
+                    prb_s2 = upe_s2/(self.rules.ympe_s2(year)-self.rules.ympe(year))*(self.rules.ympe_s2(year+1)-self.rules.ympe(year+1)) * self.rules.supp_s2(year)
                 else:
                     prb_s2 = 0.0
                 #Ajustment factor
